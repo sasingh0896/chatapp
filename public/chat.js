@@ -1,4 +1,4 @@
-// Make connection
+//Make connection
 var clientSocket = io.connect('http://localhost:4000');
 
 // Query DOM
@@ -23,7 +23,7 @@ message.addEventListener('keypress', function(){
 
 // Listen for events
 clientSocket.on('chat', function(data){
-    feedback.innerHTML = '';
+    feedback.innerHTML = ''; 
     output.innerHTML += '<p><strong>' + data.handle + ': </strong>' + data.message + '</p>';
 });
 
